@@ -98,6 +98,15 @@ Before joining NTT, I specialized in systems biology and bioinformatics at Keio 
 
 <div class="row">
 
+<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4 class="title"><a href="">2026.05</a></h4>
+<p class="description">
+My single-author paper, <a href="https://arxiv.org/abs/2602.23602" target="_blank"><i>Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data</i></a>, has been accepted to <b>KDD 2026</b>.
+I present an interpretable, moment-driven causal discovery framework for elucidating complex real-world phenomena. See you in Jeju!
+            </p>
+</div>
+
 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
 <div class="icon"><i class="bi bi-currency-dollar"></i></div>
 <h4 class="title"><a href="">2026.04</a></h4>
@@ -145,14 +154,7 @@ an end-to-end inverse probability weighting (IPW) correction framework for impro
             </p>
 </div>
 
-<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
-<h4 class="title"><a href="">2023.12</a></h4>
-<p class="description">
-Our joint work, entitled <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30025" target="_blank"><i>Uncertainty Quantification in Heterogeneous Treatment Effect Estimation with a Gaussian-Process-Based Partially Linear Model</i></a>, has been accepted to <b>AAAI 2024</b>.
-We present a Bayesian semi-parametric model for uncertainty quantification in conditional average treatment effect (CATE) estimation.
-            </p>
-</div>
+
 
 <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-book"></i></div>
@@ -369,6 +371,33 @@ I believe such causal inference techniques provide an essential foundation for m
 <div class="section-title">
 <h2>Selected Research Topics</h2>
 </div>
+
+<div class="row">
+<div class="col-lg-4">
+<img alt="" class="img-fluid" src="assets/img/moment_kdd.jpg"/>
+</div>
+<div class="col-lg-8 pt-4 pt-lg-0 content">
+<h3>Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data</h3>
+<p>
+Causal discovery aims to uncover cause-effect relationships among variables from observational data and supports scientific knowledge discovery and decision-making in various fields, such as biology, economics, and healthcare. Standard causal discovery methods, however, typically infer a single causal graph that does not distinguish how each cause affects the distribution of its effect variable.<br/>
+This limitation becomes critical in heteroscedastic data, where the variance of a variable changes depending on other variables. For example, in drug discovery, some regulators may change the average activity of a target protein, while others may control its variability across individuals. Identifying these two types of causes separately is essential for designing more interpretable and targeted interventions.<br/>
+To address this problem, we propose a moment-driven causal discovery framework that separately infers mean and variance causal graphs from observational heteroscedastic data. We first establish identifiability conditions under which these two graphs can be recovered, and then develop a Bayesian variational inference method that jointly learns their posterior distribution, enabling uncertainty quantification for edges, paths, and subgraphs.<br/>
+Experiments on synthetic, semi-synthetic, and real-world datasets demonstrate that our method accurately recovers mean and variance causal structures and outperforms existing causal discovery baselines. These results show the promise of moment-driven causal discovery for understanding complex causal mechanisms behind both average behavior and variability.<br/>
+</p>
+<div class="row">
+<div class="col-lg-12">
+<ul>
+<li>
+<u>Yoichi Chikahara</u>. Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data. Proc. of the 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, Jeju, Korea, August 2026 (<b>KDD2026</b>; Acceptance Rate: <b>18%</b>) [<a href="https://arxiv.org/abs/2602.23602">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="">Code</a>]
+                <br/>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
 <div class="row">
 <div class="col-lg-4">
 <img alt="" class="img-fluid" src="assets/img/pareto_uai.jpg"/>
