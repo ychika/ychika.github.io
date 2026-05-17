@@ -97,6 +97,15 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
 </div>
 <div class="row">
 
+<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4 class="title"><a href="">2026.05</a></h4>
+<p class="description">
+単著論文 <a href="https://arxiv.org/abs/2602.23602" target="_blank"><i>Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data</i></a>が<b>KDD 2026</b>に採択されました。
+本研究では、通常の因果グラフ推定より解釈しやすい結果を出力する、モーメント駆動型因果探索を提案し、平均・分散のそれぞれに影響する原因変数を区別することが可能です。
+            </p>
+</div>
+
 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
 <div class="icon"><i class="bi bi-currency-dollar"></i></div>
 <h4 class="title"><a href="">2026.04</a></h4>
@@ -391,6 +400,33 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
 <div class="section-title">
 <h2>Selected Research Topics</h2>
 </div>
+
+<div class="row">
+<div class="col-lg-4">
+<img alt="" class="img-fluid" src="assets/img/moment_kdd.jpg"/>
+</div>
+<div class="col-lg-8 pt-4 pt-lg-0 content">
+<h3>分散不均一観察データからの平均・分散因果グラフの発見</h3>
+<p>
+因果探索は、観測データから変数間の原因と結果の関係を明らかにすることを目的としており、生物学、経済学、医療などのさまざまな分野における科学的知識発見や意思決定を支援します。しかし、標準的な因果探索手法は通常、単一の因果グラフを推定するため、それぞれの原因が結果変数の分布にどのような影響を与えるのかを区別することはできません。<br/>
+この限界は、ある変数の分散が他の変数に応じて変化する分散不均一なデータにおいて特に重要になります。例えば創薬では、ある制御因子は標的タンパク質の平均的な活性を変化させる一方で、別の制御因子は個人間のばらつきを制御するかもしれません。これら2種類の原因を別々に特定することは、より解釈しやすく、標的を絞った介入を設計するうえで重要です。<br/>
+この問題に対処するために、本研究では、分散不均一な観察データから平均因果グラフと分散因果グラフを別々に推定する、モーメント駆動型の因果探索フレームワークを提案します。まず、これら2つのグラフを識別できる条件を理論的に示し、そのうえで、それらの事後分布を同時に学習するベイズ変分推論法を開発します。これにより、エッジ、パス、部分グラフといった構造的特徴に対する不確実性を定量化できます。<br/>
+合成データ、半合成データ、実世界データを用いた実験により、提案手法が平均および分散の因果構造を正確に復元し、既存の因果探索ベースラインを上回ることを示しました。これらの結果は、平均的な挙動とばらつきの双方を生み出す複雑な因果メカニズムを理解するうえで、モーメント駆動型因果探索が有望であることを示しています。<br/>
+</p>
+<div class="row">
+<div class="col-lg-12">
+<ul>
+<li>
+<u>Yoichi Chikahara</u>. Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data. Proc. of the 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, Jeju, Korea, August 2026 (<b>KDD2026</b>; Acceptance Rate: <b>18%</b>) [<a href="https://arxiv.org/abs/2602.23602">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="">Code</a>]
+                <br/>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
 <div class="row">
 <div class="col-lg-4">
 <img alt="" class="img-fluid" src="../assets/img/pareto_uai.jpg"/>
