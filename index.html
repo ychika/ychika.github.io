@@ -98,6 +98,15 @@ Before joining NTT, I specialized in systems biology and bioinformatics at Keio 
 
 <div class="row">
 
+<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4 class="title"><a href="">2026.06</a></h4>
+<p class="description">
+<b>Two of our papers</b>, <a href="https://arxiv.org/abs/2602.23611"><i>Fairness under Graph Uncertainty: Achieving Interventional Fairness with Partially Known Causal Graphs over Clusters of Variables</i></a> <b>and</b> <a href="https://arxiv.org/abs/2510.22298"><i>MetaCaDI: A Meta-Learning Framework for Scalable Causal Discovery with Unknown Interventions</i></a>, have been accepted to <b>UAI 2026</b>!
+See you in Amsterdam!
+            </p>
+</div>
+
 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
 <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
 <h4 class="title"><a href="">2026.05</a></h4>
@@ -144,15 +153,7 @@ I am honored to be invited to <a href="https://www.japanprize.jp/en/index.html">
 </p>
 </div>
 
-<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
-<h4 class="title"><a href="">2024.04</a></h4>
-<p class="description">
-Our paper, entitled <a href="https://arxiv.org/abs/2404.17483"><i>Differentiable Pareto-Smoothed Weighting for High-Dimensional Heterogeneous Treatment Effect Estimation</i></a>, has been accepted to <b>UAI 2024</b> (acceptance rate: <b>27.0%</b>).
-In this work, we propose <i>differentiable Pareto smoothing</i>, 
-an end-to-end inverse probability weighting (IPW) correction framework for improving the stability of conditional average treatment effect (CATE) estimation.
-            </p>
-</div>
+
 
 
 
@@ -241,6 +242,8 @@ I believe such causal inference techniques provide an essential foundation for m
 <li>Causal discovery</li>
 <ul>
 <li>Granger causality inference via supervised learning (<b>IJCAI2018</b>, TOM2018)</li>
+<li>Mean and variance causal graph discovery from heteroscedastic observational data (<b>KDD2026</b>)</li>
+<li>Causal discovery from multiple environments: Meta-learning from a collection of interventional datasets (<b>UAI2026</b>)</li>
 </ul>
 <li>Treatment effect estimation</li>
 <ul>
@@ -252,6 +255,7 @@ I believe such causal inference techniques provide an essential foundation for m
 <li>Machine learning and causality-based fairness</li>
 <ul>
 <li>Achieving path-specific counterfactual fairness under milder assumptions (<b>AISTATS2021</b>, <b>DAMI2022</b>)</li>
+<li>Interventional fairness with partially known causal graphs over clusters of variables (<b>UAI2026</b>)</li>
 </ul>
 </ul>
 </div>
@@ -374,6 +378,34 @@ I believe such causal inference techniques provide an essential foundation for m
 
 <div class="row">
 <div class="col-lg-4">
+<img alt="" class="img-fluid" src="assets/img/cluster_uai.jpg"/>
+</div>
+<div class="col-lg-8 pt-4 pt-lg-0 content">
+<h3>Fairness under Graph Uncertainty: Achieving Interventional Fairness with Partially Known Causal Graphs over Clusters of Variables</h3>
+<p>
+Machine learning is increasingly used to support high-stakes decisions about individuals, such as hiring, lending, and child abuse detection. In these applications, predictions should be not only accurate but also fair with respect to sensitive attributes such as gender and race. Causal notions of fairness align with legal requirements, but existing methods often assume detailed knowledge of the underlying causal graph among individual variables, which is difficult to obtain reliably in practice.<br/>
+To address this setting, we propose a learning framework for achieving interventional fairness using a partially known causal graph over clusters of variables. 
+Such cluster-level causal graph is easier to estimate than the full variable-level graph. 
+However, since the causal relationships inside each cluster remain unknown, identifying the interventional distributions required for fairness is challenging. We therefore develop a graphical algorithm that enumerates possible adjustment cluster sets and train a predictive model by reducing the worst-case unfairness over these sets.<br/>
+We also introduce an efficient barycenter kernel maximum mean discrepancy to measure discrepancies among multiple interventional prediction distributions with favorable computational scalability. Experiments on synthetic and real-world datasets show that our method achieves a better balance between fairness and predictive accuracy than existing approaches. These results demonstrate the promise of cluster-level causal knowledge for building fair predictive models under realistic causal graph uncertainty.<br/>
+</p>
+
+<div class="row">
+<div class="col-lg-12">
+<ul>
+<li>
+<u>Yoichi Chikahara</u>. Fairness under Graph Uncertainty: Achieving Interventional Fairness with Partially Known Causal Graphs over Clusters of Variables. Proc. of the 42nd International Conference on Uncertainty in Artificial Intelligence, Amsterdam, Netherlands, August 2026 (<b>UAI2026</b>; Acceptance Rate: <b>30%</b>) [<a href="https://arxiv.org/abs/2602.23611">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="">Code</a>]
+                <br/>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-4">
 <img alt="" class="img-fluid" src="assets/img/moment_kdd.jpg"/>
 </div>
 <div class="col-lg-8 pt-4 pt-lg-0 content">
@@ -388,7 +420,7 @@ Experiments on synthetic, semi-synthetic, and real-world datasets demonstrate th
 <div class="col-lg-12">
 <ul>
 <li>
-<u>Yoichi Chikahara</u>. Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data. Proc. of the 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, Jeju, Korea, August 2026 (<b>KDD2026</b>; Acceptance Rate: <b>18%</b>) [<a href="https://arxiv.org/abs/2602.23602">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="">Code</a>]
+<u>Yoichi Chikahara</u>. Moment Matters: Mean and Variance Causal Graph Discovery from Heteroscedastic Observational Data. Proc. of the 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, Jeju, Korea, August 2026 (<b>KDD2026</b>; Acceptance Rate: <b>18%</b>) [<a href="https://arxiv.org/abs/2602.23602">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="https://github.com/ychika/MV-DAG">Code</a>]
                 <br/>
 </li>
 
