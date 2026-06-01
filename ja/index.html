@@ -97,6 +97,14 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
 </div>
 <div class="row">
 
+<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4 class="title"><a href="">2026.06</a></h4>
+<p class="description">
+<b>２つの論文</b> <a href="https://arxiv.org/abs/2602.23611"><i>Fairness under Graph Uncertainty: Achieving Interventional Fairness with Partially Known Causal Graphs over Clusters of Variables</i></a> <b>と</b> <a href="https://arxiv.org/abs/2510.22298"><i>MetaCaDI: A Meta-Learning Framework for Scalable Causal Discovery with Unknown Interventions</i></a>が、<b>UAI 2026</b>に採択されました。
+</p>
+</div>
+
 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
 <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
 <h4 class="title"><a href="">2026.05</a></h4>
@@ -146,23 +154,16 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
             </p>
 </div>
 
-<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-<div class="icon"><i class="bi bi-file-earmark-text"></i></div>
-<h4 class="title"><a href="">2024.04</a></h4>
-<p class="description">
-主著論文 <a href="https://arxiv.org/abs/2404.17483"><i>Differentiable Pareto-Smoothed Weighting for High-Dimensional Heterogeneous Treatment Effect Estimation</i></a> が、<b>UAI 2024</b>（採択率：<b>27.0%</b>）に採択されました。
-本研究では、条件付き平均処置効果（CATE）の推定の安定性を向上させるため、エンドツーエンドで逆確率重み付け（IPW）の重みを補正する <i>differentiable Pareto smoothing</i> を提案しています。
-            </p>
-</div>
 
-<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+
+<!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
 <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
 <h4 class="title"><a href="">2023.12</a></h4>
 <p class="description">
 早稲田大学との共同研究論文 <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30025" target="_blank"><i>Uncertainty Quantification in Heterogeneous Treatment Effect Estimation with a Gaussian-Process-Based Partially Linear Model</i></a> が、<b>AAAI 2024</b> に採択されました。
 本研究では、条件付き平均処置効果（CATE）推定における不確実性定量化のためのベイジアンセミパラメトリックモデルを提案しています。
             </p>
-</div>
+</div> -->
 
 
 
@@ -275,14 +276,20 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
           知能創発環境研究グループ、協創情報研究部、NTT コミュニケーション科学基礎研究所
         </p> 
         <ul> 
-          <li>因果グラフ推定</li> <ul> <li>教師あり学習によるグレンジャー因果性推論（<b>IJCAI2018</b>, TOM2018）</li> 
+          <li>因果グラフ推定</li> <ul> 
+            <li>教師あり学習によるグレンジャー因果性推論（<b>IJCAI2018</b>, TOM2018）</li> 
+            <li>分散不均一観察データからの平均・分散因果グラフの発見 (<b>KDD2026</b>)</li>
+            <li>複数の環境からの因果グラフ推定: 介入データセット集合からのメタ学習 (<b>UAI2026</b>)</li>
+
           </ul> 
           <li>処置効果推定</li> <ul> <li>因果メカニズム解明のための分布処置効果修飾因子の選択（<b>UAI2022</b>）</li> 
             <li>ガウス過程ベースの部分線形モデルを用いた条件付き平均処置効果（CATE）の推定の不確実性定量化（<b>AAAI2024</b>）</li> 
             <li>高次元観測データからのCATE推定における微分可能パレート平滑化重みを用いた深層表現学習（<b>UAI2024</b>）</li> 
             <li>メタ学習による少数データからのCATE推定（<b>Machine Learning 2024</b>）</li> 
           </ul> 
-          <li>機械学習と因果関係に基づく公平性</li> <ul> <li>より弱い仮定下での経路特異的反実仮想的公平性を達成する予測器の学習（<b>AISTATS2021</b>, <b>DAMI2022</b>）</li> 
+          <li>機械学習と因果関係に基づく公平性</li> <ul> 
+            <li>より弱い仮定下での経路特異的反実仮想的公平性を達成する予測器の学習（<b>AISTATS2021</b>, <b>DAMI2022</b>）</li> 
+            <li>クラスター因果グラフを用いた介入公平性の保証 (<b>UAI2026</b>)</li>
           </ul> 
         </ul> 
       </div> 
@@ -401,9 +408,39 @@ NTTに入社する前は、慶應義塾大学および東京大学で<a href="ht
 <h2>Selected Research Topics</h2>
 </div>
 
+
+
 <div class="row">
 <div class="col-lg-4">
-<img alt="" class="img-fluid" src="assets/img/moment_kdd.jpg"/>
+<img alt="" class="img-fluid" src="../assets/img/cluster_uai.jpg"/>
+</div>
+<div class="col-lg-8 pt-4 pt-lg-0 content">
+<h3>クラスター因果グラフを用いた介入公平性の保証</h3>
+<p>
+機械学習は、人材採用、融資承認、児童の虐待検知など、個人に関わる重要な意思決定を支援するためにますます利用されています。このような応用では、予測が高精度であることはもちろん、性別や人種といったセンシティブな属性に関して公平であることが要求されます。統計的因果推論に基づく公平性尺度は司法の現場における法的要件とも整合しますが、既存手法の多くは、個々の変数間の詳細な因果グラフが既知であることを仮定しており、このようなグラフは実際には推定することが難しいものです。<br/>
+本研究では、このような問題に対処するため、変数の集合（クラスター）に関する因果グラフを用いて、介入的公平性を達成するための学習フレームワークを提案します。このようなクラスター因果グラフは、変数単位の完全な因果グラフよりも推定しやすいという利点があります。しかし、各クラスターの内部の変数間の因果関係は未知であるため、公平性の評価に必要な介入分布を識別することは容易ではありません。そこで本研究では、可能な調整クラスター集合を列挙するグラフィカルアルゴリズムを開発し、それらの集合にわたる最悪ケースの不公平性を小さくするように予測モデルを学習します。<br/>
+さらに、複数の介入予測分布間のずれを計算効率良く定量するため、重心カーネルMMD制約を導入します。人工データおよび実データを用いた実験により、提案手法が既存手法よりも公平性と予測精度のバランスに優れていることを示しました。これらの結果は、現実的な因果グラフの不確実性のもとで公平な予測モデルを構築するうえで、クラスター因果グラフの利用が有望であることを示しています。<br/>
+</p>
+
+<div class="row">
+<div class="col-lg-12">
+<ul>
+<li>
+<u>Yoichi Chikahara</u>. Fairness under Graph Uncertainty: Achieving Interventional Fairness with Partially Known Causal Graphs over Clusters of Variables. Proc. of the 42nd International Conference on Uncertainty in Artificial Intelligence, Amsterdam, Netherlands, August 2026 (<b>UAI2026</b>; Acceptance Rate: <b>30%</b>) [<a href="https://arxiv.org/abs/2602.23611">Preprint</a>] [<a href="">Openreview</a>] [<a href="">Proceedings</a>] [<a href="">Paper(PDF)</a>] [<a href="">Poster(PDF)</a>] [<a href="">Code</a>]
+                <br/>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-lg-4">
+<img alt="" class="img-fluid" src="../assets/img/moment_kdd.jpg"/>
 </div>
 <div class="col-lg-8 pt-4 pt-lg-0 content">
 <h3>分散不均一観察データからの平均・分散因果グラフの発見</h3>
